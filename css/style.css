@@ -52,7 +52,7 @@ body {
   height: 104px;
   border-radius: 21px;
   padding: 10px;
-  font-size: 30px;
+  font-size: 45px;
   text-align: end;
 }
 
@@ -82,7 +82,7 @@ body {
   width: 104px;
   height: 104px;
   border: none;
-  font-size: 30px;
+  font-size: 45px;
   text-align: center;
 }
 .main button:hover {
