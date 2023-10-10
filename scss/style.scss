@@ -59,6 +59,7 @@ body {
     button {
         @include margin();
         @include radius(78px);
+        cursor: pointer;
         width: 104px;
         height: 104px;
         border: none;

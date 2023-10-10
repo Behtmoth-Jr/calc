@@ -78,6 +78,7 @@ body {
 .main button {
   margin: 19px;
   border-radius: 78px;
+  cursor: pointer;
   width: 104px;
   height: 104px;
   border: none;
