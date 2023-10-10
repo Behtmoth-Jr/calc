@@ -51,7 +51,7 @@ body {
     display: flex;
     .main_items {
         display: flex;
-        justify-content: center;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: space-around;
     }
