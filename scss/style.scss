@@ -32,7 +32,8 @@ body {
 .app {
     @include wrapper();
     background-color: black;
-    @include radius(21px)
+    @include radius(21px);
+    box-shadow: 20px 13px 12px 6px;
 }
 .header {
     width: 100%;
