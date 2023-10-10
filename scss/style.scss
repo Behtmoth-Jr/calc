@@ -47,10 +47,15 @@ body {
         }
 }
 .main {
+    max-width: 768px;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 720px;
-    input {
+    .main_items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    button {
         @include margin();
         @include radius(78px);
         width: 104px;

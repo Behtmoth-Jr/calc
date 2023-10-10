@@ -9,31 +9,19 @@
 </head>
 
 <body>
-    <div class="app">
+    <div class="app" id="calc">
         <div class="header">
-            <input type="text" class="header_item-text">
+            <input type="text" v-model="result">
         </div>
         <div class="main">
-            <input type="button" value="7" class="main_item-btn">
-            <input type="button" value="8" class="main_item-btn">
-            <input type="button" value="9" class="main_item-btn">
-            <input type="button" value="C" class="main_item-btn result">
-            <input type="button" value="=" class="main_item-btn result">
-            <input type="button" value="4" class="main_item-btn">
-            <input type="button" value="5" class="main_item-btn">
-            <input type="button" value="6" class="main_item-btn">
-            <input type="button" value="/" class="main_item-btn operator">
-            <input type="button" value="*" class="main_item-btn operator">
-            <input type="button" value="1" class="main_item-btn">
-            <input type="button" value="2" class="main_item-btn">
-            <input type="button" value="3" class="main_item-btn">
-            <input type="button" value="+" class="main_item-btn operator">
-            <input type="button" value="-" class="main_item-btn operator">
-            <input type="button" value="," class="main_item-btn">
-            <input type="button" value="0" class="main_item-btn">
-            <input type="button" value="00" class="main_item-btn">
-            <input type="button" value="(" class="main_item-btn operator">
-            <input type="button" value=")" class="main_item-btn operator">
+            <div class="main_items numbers">
+                <button v-for="num in numbers" @click="input(num)"> {{num}} </button>
+            </div>
+            <div class="main_items operators">
+                <button v-for="op in operators" class="operator" @click="input(op)"> {{op}} </button>
+                <button class="result" @click="reset">C</button>
+                <button class="result" @click="calculate">=</button>
+            </div>
         </div>
     </div>
 </body>

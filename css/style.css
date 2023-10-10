@@ -56,14 +56,24 @@ body {
 }
 
 .main {
+  max-width: 768px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.main .main_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 720px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.main input {
+.main button {
   margin: 19px;
   border-radius: 78px;
   width: 104px;
@@ -72,12 +82,12 @@ body {
   font-size: 30px;
   text-align: center;
 }
-.main input:hover {
+.main button:hover {
   background: #8b8b8b;
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
 }
-.main input:active {
+.main button:active {
   background: #3a3a3a;
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
