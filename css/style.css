@@ -40,6 +40,8 @@ body {
           justify-content: center;
   background-color: black;
   border-radius: 21px;
+  -webkit-box-shadow: 20px 13px 12px 6px;
+          box-shadow: 20px 13px 12px 6px;
 }
 
 .header {
